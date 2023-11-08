@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import { useNavigate } from 'react-router-dom';
-const API_KEY = "AIzaSyC6UetIHrjWwC6KBKpw3M6g7axYsmy-QFo";
+const API_KEY = process.env.REACT_APP_API_KEY
 
 
 export default function Book({ value, setValue }) {

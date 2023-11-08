@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-const API_KEY = "AIzaSyC6UetIHrjWwC6KBKpw3M6g7axYsmy-QFo"
-
+const API_KEY = process.env.REACT_APP_API_KEY
 
 export default function BookshelfCard({ id, shelve }) {
     const [book, setBook] = useState({})
