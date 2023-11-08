@@ -90,7 +90,9 @@ Step-by-step instructions on how to install and run your React app.
    ```sh
    cd server
    npm start
+   ```
 5. Start the client
    ```sh
    cd client
    npm start
+   ```
