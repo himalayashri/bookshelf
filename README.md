@@ -11,6 +11,7 @@ Bookshelf is a mini social network dedicated to book lovers and enables a place 
     - [User Authentication](#user-authentication)
     - [Searching Feature](#searching-feature)
     - [Customize Bookshelf](#customize-bookshelf)
+  - [Technologies](#technologies)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
@@ -47,6 +48,15 @@ Here are some screenshots of our React app in action:
 - **Value**: Helps users in arranging books and distinguish them in differnet shelves.
 - **How it works**: We made personal shelves like currently reading, Want to Read and Read to facilitate the user.
 
+## Technologies
+
+- **React.js**
+- **MongoDB**
+- **Express.js**
+- **Node.js**
+- **JWT Authentication**
+- **Bcrypt.js**
+
 ## Getting Started
 
 This is how you need to set up the project on the your local machine.
@@ -55,7 +65,7 @@ This is how you need to set up the project on the your local machine.
 
 These are the software or dependencies that need to be installed for your app to work.
 
-- Node.js (version X.X.X)
+- Node.js (v18.18.2.)
 - npm or Yarn
 
 ### Installation
@@ -64,4 +74,23 @@ Step-by-step instructions on how to install and run your React app.
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/your-react-app.git
+   git clone https://github.com/himalayashri/bookshelf.git
+2. Go to the project directory and install   dependencies for both the client and server
+   ```sh
+   cd app
+   npm install
+   ```
+
+   ```sh
+   cd server
+   npm install
+   ```
+3. Create a .env file in both the client and server directories and add the environment variables as shown in the .env.example files.
+4. Start the server
+   ```sh
+   cd server
+   npm start
+5. Start the client
+   ```sh
+   cd client
+   npm start
