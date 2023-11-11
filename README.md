@@ -75,6 +75,7 @@ Step-by-step instructions on how to install and run your React app.
 1. Clone the repository:
    ```sh
    git clone https://github.com/himalayashri/bookshelf.git
+   ```
 2. Go to the project directory and install   dependencies for both the client and server
    ```sh
    cd app
