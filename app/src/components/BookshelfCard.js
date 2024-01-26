@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const API_KEY = process.env.REACT_APP_API_KEY
 
 export default function BookshelfCard({ id, shelve }) {
-    const [book, setBook] = useState({})
+    const [book, setBook] = useState({});
+        const navigate = useNavigate();
+
 
     const getBook = useCallback(async () => {
         try {
@@ -43,7 +46,7 @@ export default function BookshelfCard({ id, shelve }) {
 
             localStorage.setItem('user', JSON.stringify(json.userData));
 
-            window.location.reload()
+          navigate(`/bookshelf/${val}`);
         }
 
     }
